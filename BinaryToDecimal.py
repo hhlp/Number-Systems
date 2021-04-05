@@ -3,11 +3,14 @@ class BinaryConverter(object):
         self.bit_string = bit_string
         self.byte_list = bit_string.split(".")
         
+        
     def __str__(self):
-        return str(f"{self.bit_string}\n{self.convertion()}")
+        return str(self.convertion())
+    
     
     def __repr__(self):
-        return str("Takes a bit string, splits it into bytes and converts it to decimal notation.")
+        return str("This object takes in a bit-string, splits it into bytes, and converts it into decimal notation.")
+    
     
     def convertion(self):
         decimal_notation = ""
@@ -18,5 +21,5 @@ class BinaryConverter(object):
     
 
 if __name__ == "__main__":
-    test = BinaryConverter()
-    print(test)
+    bit_string = BinaryConverter()
+    print(bit_string)
