@@ -1,4 +1,4 @@
-class ByteCalc(object):
+class BinaryConverter(object):
     def __init__(self, byte_string="11111111.11111111.11111111.11111111"):
         self.byte_string = byte_string
         
@@ -9,5 +9,5 @@ class ByteCalc(object):
         return str("Takes a bit string, splits it into bytes and converts it to decimal notation.")
     
 if __name__ == "__main__":
-    test = ByteCalc()
+    test = BinaryConverter()
     print(test)
