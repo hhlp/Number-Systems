@@ -20,8 +20,8 @@ class HexToDecimal(object):
         return decimal_notation.strip(last_dot)
     
 
-if __name__ == "__main__":
-    hex_string = HexToDecimal("7f.c0.a8.1")
-    print(f"Passed hex-string:  {hex_string}\n"
-          f"Default hex-string: {HexToDecimal()}\n"
-          f"Object description: {repr(HexToDecimal())}")
+# if __name__ == "__main__":
+#     hex_string = HexToDecimal("7f.c0.a8.1")
+#     print(f"Passed hex-string:  {hex_string}\n"
+#           f"Default hex-string: {HexToDecimal()}\n"
+#           f"Object description: {repr(HexToDecimal())}")
