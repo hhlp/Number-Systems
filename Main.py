@@ -1,5 +1,4 @@
 import os
-import re
 import sys
 import time
 from BinaryToDecimal import BinaryToDecimal
@@ -46,8 +45,9 @@ def binary():
                "2": DecimalToBinary}
     while True:
         os.system("cls")
-        print("[ Binary Convertion ]\n\n[0] Back\n[1] Convert Binary\n[2] Convert Decimal\n\n")
+        print("[ Binary Convertion ]\n\n[0] Back\n[1] Convert Binary\n[2] Convert Decimal\n")
         try:
+            print("[ Base Selection ]")
             choice = str(int(input("  >> ")))
             if -1 > int(choice) > 2:
                 print("Please enter a number between 0 and 2")
@@ -73,7 +73,7 @@ def binary():
                     print("Enter a binary string please..")
                     time.sleep(2)
                     continue
-                return print(BinaryToDecimal(convert_me))
+                return print(f"\nResult: {BinaryToDecimal(convert_me)}")
         
         elif method == DecimalToBinary:
             while True:
@@ -85,7 +85,7 @@ def binary():
                     print("Enter a numerical string please..")
                     time.sleep(2)
                     continue
-                return print(DecimalToBinary(str(convert_me)))
+                return print(f"\nResult: {DecimalToBinary(convert_me)}")
 
 
 def hexadecimal():
@@ -94,8 +94,9 @@ def hexadecimal():
                "2": DecimalToHex}
     while True:
         os.system("cls")
-        print("[ Hexadecimal Convertion ]\n\n[0] Back\n[1] Convert Hexadecimal\n[2] Convert Decimal\n\n")
+        print("[ Hexadecimal Convertion ]\n\n[0] Back\n[1] Convert Hexadecimal\n[2] Convert Decimal\n")
         try:
+            print("[ Base Selection ]")
             choice = str(int(input("  >> ")))
             if -1 > int(choice) > 2:
                 print("Please enter a number between 0 and 2")
@@ -121,7 +122,7 @@ def hexadecimal():
                     print("Enter a hexadecimal string please..")
                     time.sleep(2)
                     continue
-                return print(HexToDecimal(convert_me))
+                return print(f"\nResult: {HexToDecimal(convert_me)}")
         
         elif method == DecimalToHex:
             while True:
@@ -133,7 +134,7 @@ def hexadecimal():
                     print("Enter a numerical string please..")
                     time.sleep(2)
                     continue
-                return print(DecimalToHex(str(convert_me)))
+                return print(f"\nResult: {DecimalToHex(convert_me)}")
 
 
 if __name__ == "__main__":
