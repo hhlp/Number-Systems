@@ -9,7 +9,7 @@ class HexToDecimal(object):
     
     
     def __repr__(self):
-        return repr("This object takes in a hex-string, splits it into bytes, and converts it into decimal notation.")
+        return repr("This object takes in a hexadecimal-string, splits it into bytes, and converts it into decimal notation.")
     
     
     def convertion(self):
