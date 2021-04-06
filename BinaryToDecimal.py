@@ -20,8 +20,8 @@ class BinaryToDecimal(object):
         return decimal_notation.strip(last_dot)
     
 
-if __name__ == "__main__":
-    bit_string = BinaryToDecimal("10110011.11100000.10101010.00001111")
-    print(f"Passed bit-string:  {bit_string}\n"
-          f"Default bit-string: {BinaryToDecimal()}\n"
-          f"Object description: {repr(BinaryToDecimal())}")
+# if __name__ == "__main__":
+#     bit_string = BinaryToDecimal("10110011.11100000.10101010.00001111")
+#     print(f"Passed bit-string:  {bit_string}\n"
+#           f"Default bit-string: {BinaryToDecimal()}\n"
+#           f"Object description: {repr(BinaryToDecimal())}")

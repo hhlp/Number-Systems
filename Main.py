@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 from BinaryToDecimal import BinaryToDecimal
 from DecimalToBinary import DecimalToBinary
@@ -34,9 +35,12 @@ def base_selection():
 
 def base_test(convert_me):
     bins = {"0", "1"}
+    hexs = {"A", "B", "C", "D", "E", "F"}
     base_string = set(convert_me)
     if bins == base_string or base_string == {"0"} or base_string == {"1"}:
         return "Binary"
+    elif re.fullmatch(r"^[0-9a-fA-F]$", base_string):
+        return "Hexadecimal"
     else:
         return "Decimal"
     
@@ -44,18 +48,23 @@ def base_test(convert_me):
 def binary():
     print("\n\n[ Binary Convertion ]")
     print("Please enter your bit-string or number sequence:")
-    convert_me = input("  >> ")
+    convert_me = input("  >> ").upper()
     if base_test(convert_me) == "Binary":
         print(BinaryToDecimal(convert_me))
     else:
         print(DecimalToBinary(convert_me))
-    
 
 
 def hexadecimal():
     print("[ Hexadecimal Convertion ]")
     print("Please enter your hexadecimal-string or number sequence:")
-    convert_me = input("  >> ")
+    convert_me = input("  >> ").upper()
+    if base_test(convert_me) == "Hexadecimal":
+        print("Hex")
+        # print(BinaryToDecimal(convert_me))
+    else:
+        print("Hex-dec")
+        # print(DecimalToBinary(convert_me))
 
 
 if __name__ == "__main__":
