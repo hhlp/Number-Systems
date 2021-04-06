@@ -22,6 +22,6 @@ class DecimalToBinary(object):
 
 if __name__ == "__main__":
     num_seq = DecimalToBinary("127.192.168.1")
-    print(f"Passed bit-string:  {num_seq}\n"
-          f"Default bit-string: {DecimalToBinary()}\n"
-          f"Object description: {repr(DecimalToBinary())}")
+    print(f"Passed number sequence:  {num_seq}\n"
+          f"Default number sequence: {DecimalToBinary()}\n"
+          f"Object description:      {repr(DecimalToBinary())}")
