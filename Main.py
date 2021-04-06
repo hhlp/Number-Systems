@@ -69,7 +69,7 @@ def binary():
                 os.system("cls")
                 print("[ Binary to Decimal Convertion ]\nEnter Binary:")
                 try:
-                    convert_me = str(int(input("  >> ")))
+                    convert_me = str(input("  >> "))
                 except:
                     print("Enter a binary string please..")
                     time.sleep(2)
@@ -83,7 +83,7 @@ def binary():
                 os.system("cls")
                 print("[ Decimal to Binary Convertion ]\nEnter Decimal:")
                 try:
-                    convert_me = str(int(input("  >> ")))
+                    convert_me = str(input("  >> "))
                 except:
                     print("Enter a numerical string please..")
                     time.sleep(2)
@@ -136,7 +136,7 @@ def hexadecimal():
                 os.system("cls")
                 print("[ Decimal to Hexadecimal Convertion ]\nEnter Decimal:")
                 try:
-                    convert_me = str(int(input("  >> ")))
+                    convert_me = str(input("  >> "))
                 except:
                     print("Enter a numerical string please..")
                     time.sleep(2)

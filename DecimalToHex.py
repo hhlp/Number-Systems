@@ -6,6 +6,7 @@ class DecimalToHex(object):
         except:
             self.num_list = num_seq
         
+        
     def __str__(self):
         return str(self.convertion())
     

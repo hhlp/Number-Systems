@@ -6,6 +6,7 @@ class HexToDecimal(object):
         except:
             self.hex_list = hex_string
         
+        
     def __str__(self):
         return str(self.convertion())
     
