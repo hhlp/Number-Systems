@@ -25,5 +25,3 @@ if __name__ == "__main__":
     print(f"Passed bit-string:  {bit_string}\n"
           f"Default bit-string: {BinaryToDecimal()}\n"
           f"Object description: {repr(BinaryToDecimal())}")
-
-
