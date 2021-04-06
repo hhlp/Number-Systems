@@ -9,9 +9,9 @@ from HexToDecimal import HexToDecimal
 
 base_menu = str("""
     [ Number System Converter ]
-[0] Exit.
-[1] Binary.
-[2] Hexadecimal.
+[0] Exit
+[1] Binary
+[2] Hexadecimal
 """)
 
 
