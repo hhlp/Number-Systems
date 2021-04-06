@@ -1,7 +1,10 @@
 class BinaryToDecimal(object):
     def __init__(self, bit_string="11111111.11111111.11111111.11111111"):
         self.bit_string = bit_string
-        self.byte_list = bit_string.split(".")
+        try:
+            self.byte_list = bit_string.split(".")
+        except:
+            self.byte_list = bit_string
         
         
     def __str__(self):
