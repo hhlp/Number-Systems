@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+import keyboard
 from BinaryToDecimal import BinaryToDecimal
 from DecimalToBinary import DecimalToBinary
 from BinaryToDecimal import BinaryToDecimal
@@ -73,7 +74,9 @@ def binary():
                     print("Enter a binary string please..")
                     time.sleep(2)
                     continue
-                return print(f"\nResult: {BinaryToDecimal(convert_me)}")
+                os.system("cls")
+                print(f"\nResult: {BinaryToDecimal(convert_me)}")
+                return continue_or_stop()
         
         elif method == DecimalToBinary:
             while True:
@@ -85,7 +88,9 @@ def binary():
                     print("Enter a numerical string please..")
                     time.sleep(2)
                     continue
-                return print(f"\nResult: {DecimalToBinary(convert_me)}")
+                os.system("cls")
+                print(f"\nResult: {DecimalToBinary(convert_me)}")
+                return continue_or_stop()
 
 
 def hexadecimal():
@@ -122,7 +127,9 @@ def hexadecimal():
                     print("Enter a hexadecimal string please..")
                     time.sleep(2)
                     continue
-                return print(f"\nResult: {HexToDecimal(convert_me)}")
+                os.system("cls")
+                print(f"\nResult: {HexToDecimal(convert_me)}")
+                return continue_or_stop()
         
         elif method == DecimalToHex:
             while True:
@@ -134,8 +141,27 @@ def hexadecimal():
                     print("Enter a numerical string please..")
                     time.sleep(2)
                     continue
-                return print(f"\nResult: {DecimalToHex(convert_me)}")
-
+                os.system("cls")
+                print(f"\nResult: {DecimalToHex(convert_me)}")
+                return continue_or_stop()
+    
+    
+def continue_or_stop():
+    try:
+        print("\nConvertion Complete...\n\n"
+                "Press Space to continue\n"
+                "Press Escape to exit")
+        while True:
+            if keyboard.is_pressed("space"):
+                base_selection()
+            elif keyboard.is_pressed("escape"):
+                break
+    except:
+        while True:
+            if keyboard.is_pressed("space"):
+                base_selection()
+            elif keyboard.is_pressed("escape"):
+                break
 
 if __name__ == "__main__":
     base_selection()
