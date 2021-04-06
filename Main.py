@@ -32,17 +32,24 @@ def base_selection():
     return method()
 
 
+def base_test(convert_me):
+    bins = {"0", "1"}
+    base_string = set(convert_me)
+    if bins == base_string or base_string == {"0"} or base_string == {"1"}:
+        return "Binary"
+    else:
+        return "Decimal"
+    
+
 def binary():
     print("\n\n[ Binary Convertion ]")
     print("Please enter your bit-string or number sequence:")
     convert_me = input("  >> ")
-    for num in convert_me:
-        if num in str(range(2, 9)):
-            print("Decimal Input!")
-            # print(DecimalToBinary(convert_me))
-        else:
-            print("Binary Input!")
-            print(BinaryToDecimal(convert_me))
+    if base_test(convert_me) == "Binary":
+        print(BinaryToDecimal(convert_me))
+    else:
+        print(DecimalToBinary(convert_me))
+    
 
 
 def hexadecimal():
