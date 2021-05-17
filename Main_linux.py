@@ -8,6 +8,7 @@ from BinaryToDecimal import BinaryToDecimal
 from DecimalToHex import DecimalToHex
 from HexToDecimal import HexToDecimal
 
+
 base_menu = str("""
     [ Number System Converter ]
 [0] Exit
@@ -163,6 +164,7 @@ def continue_or_stop():
             elif keyboard.is_pressed("escape"):
                 break
 
+                
 if __name__ == "__main__":
     base_selection()
     
