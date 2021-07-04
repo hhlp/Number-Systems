@@ -151,7 +151,7 @@ def continue_or_stop():
     try:
         print("\nConvertion Complete...\n\n"
                 "Press Space to continue\n"
-                "Press Escape to exit")
+                "Press Escape to exit\n")
         while True:
             if keyboard.is_pressed("space"):
                 base_selection()
