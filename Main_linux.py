@@ -4,7 +4,6 @@ import time
 import keyboard
 from BinaryToDecimal import BinaryToDecimal
 from DecimalToBinary import DecimalToBinary
-from BinaryToDecimal import BinaryToDecimal
 from DecimalToHex import DecimalToHex
 from HexToDecimal import HexToDecimal
 
